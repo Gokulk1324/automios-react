@@ -1,0 +1,59 @@
+.card {
+  width: 260px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  margin: 20px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* CARD HOVER LIFT */
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.25);
+}
+
+/* IMAGE ZOOM EFFECT */
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.12);
+}
+
+/* CONTENT AREA */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h2 {
+  margin: 8px 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* BUTTON ANIMATION */
+.card button {
+  margin-top: 12px;
+  padding: 9px 16px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #1d4ed8;
+  transform: scale(1.08);
+}
